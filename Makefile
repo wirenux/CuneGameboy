@@ -1,0 +1,2 @@
+all:
+	@echo INIT DONE !
