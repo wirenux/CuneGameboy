@@ -30,6 +30,11 @@ int main(int argc, char *argv[]) {
 
     printf("\033[0;32mROM Loaded.\033[0m Starting emulation at PC: 0x%04X\n", gb->cpu.PC);
 
+    while (1) {
+        cpu_print_state(gb);
+        getchar();
+    }
+
     free(gb);
     return 0;
 }
