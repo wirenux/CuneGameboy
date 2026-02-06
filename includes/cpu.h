@@ -32,6 +32,8 @@ typedef struct {
     uint16_t SP; // Stack Pointer
     uint16_t PC; // Program Counter
 
+    int ime; // 1 = Enabled, 0 = Disabled
+
     uint32_t CYCLES; // Keep track of timing
 } CPU;
 

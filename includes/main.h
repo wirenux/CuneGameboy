@@ -11,4 +11,6 @@ typedef struct {
 void cpu_step(GameBoy *gb);
 void cpu_print_state(GameBoy *gb);
 
+void execute_instruction(GameBoy *gb, uint8_t opcode);
+
 #endif

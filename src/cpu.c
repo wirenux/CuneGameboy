@@ -17,7 +17,7 @@ void cpu_init(CPU *cpu) {
 void cpu_step(GameBoy *gb) {
     uint8_t opcode = gb->memory[gb->cpu.PC];
 
-    // execute_instruction(gb, opcode);
+    execute_instruction(gb, opcode);
 }
 
 void cpu_print_state(GameBoy *gb) {
